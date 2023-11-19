@@ -82,26 +82,31 @@ body {
 
 .navbar .search-Btn {
   display: flex;
-  gap: 5px;
-  justify-content: space-evenly;
-  background-color: white;
-  border: none;
-  text-align: center;
-  align-items: center;
-  font-size: 15px;
-  height: 30px;
-  overflow: hidden;
-}
-
-.navbar .search-Btn i {
-  display: flex;
+  position: relative;
   text-align: center;
   align-items: center;
   padding: 0;
   margin: 0;
+  height: 30px;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.navbar .search-Btn i {
+  right: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 2px;
+  margin: 1px;
   overflow: hidden;
   z-index: 1;
   height: 30px;
+  background-color: white;
 }
 
 .navbar .search-Btn .text-Box {
@@ -110,11 +115,16 @@ body {
   transition: all;
   transition-duration: 1s;
   width: 1px;
+  left: 50px;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar .search-Btn .text-Box:hover {
+.navbar .search-Btn .text-Box.active {
   width: 155px;
-  padding: 0.2rem;
+  left: 0;
+  padding: 2px;
+  margin: 5px;
 }
 
 .navbar .search-Btn:hover {

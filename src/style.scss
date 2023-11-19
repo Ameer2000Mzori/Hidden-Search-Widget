@@ -81,25 +81,30 @@ body {
 
   .search-Btn {
     display: flex;
-    gap: 5px;
-    justify-content: space-evenly;
-    background-color: white;
-    border: none;
+    position: relative;
     text-align: center;
     align-items: center;
-    font-size: 15px;
+    padding: 0;
+    margin: 0;
     height: 30px;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    font-size: 20px;
     overflow: hidden;
+    border-radius: 25px;
 
     i {
+      right: 0;
       display: flex;
       text-align: center;
       align-items: center;
-      padding: 0;
-      margin: 0;
+      padding: 2px;
+      margin: 1px;
       overflow: hidden;
       z-index: 1;
       height: 30px;
+      background-color: white;
     }
 
     .text-Box {
@@ -108,11 +113,16 @@ body {
       transition: all;
       transition-duration: 1s;
       width: 1px;
+      left: 50px;
+      padding: 0;
+      margin: 0;
     }
 
-    .text-Box:hover {
+    .text-Box.active {
       width: 155px;
-      padding: 0.2rem;
+      left: 0;
+      padding: 2px;
+      margin: 5px;
     }
   }
 

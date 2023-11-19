@@ -1,1 +1,1 @@
-console.log("start of project");
+(()=>{var c=document.querySelector(".text-Box");document.querySelector(".search-Icon").addEventListener("click",(function(){console.log("hallo world"),c.classList.contains("active")?c.classList.contains("active")&&c.classList.remove("active"):c.classList.add("active")}))})();

@@ -5,3 +5,118 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
+
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: rgb(107, 179, 101);
+}
+
+.navbar .navbrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+.navbar .navbrand .brand-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+.navbar .nav-Links {
+  display: flex;
+  text-align: end;
+  align-items: end;
+  justify-content: end;
+  width: 40%;
+}
+
+.navbar .nav-Links ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-Links ul li {
+  padding: 1rem;
+}
+
+.navbar .nav-Links ul li a {
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(249, 251, 253);
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.navbar .nav-Links ul li a:hover {
+  color: rgb(200, 223, 247);
+}
+
+.navbar .nav-Links ul li a:active {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .nav-Links {
+    display: none;
+  }
+}
+
+.navbar .search-Btn {
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  background-color: white;
+  border: none;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.navbar .search-Btn i {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 1;
+  height: 30px;
+}
+
+.navbar .search-Btn .text-Box {
+  position: relative;
+  border: none;
+  transition: all;
+  transition-duration: 1s;
+  width: 1px;
+}
+
+.navbar .search-Btn .text-Box:hover {
+  width: 155px;
+  padding: 0.2rem;
+}
+
+.navbar .search-Btn:hover {
+  cursor: pointer;
+}

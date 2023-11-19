@@ -5,3 +5,118 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
+
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: rgb(107, 179, 101);
+
+  .navbrand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+
+    .brand-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .nav-Links {
+    display: flex;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+    width: 40%;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 1rem;
+
+        a {
+          font-weight: 600;
+          font-size: 15px;
+          text-decoration: none;
+          color: rgb(249, 251, 253);
+          transition: all;
+          transition-duration: 0.2s;
+        }
+
+        a:hover {
+          color: rgb(200, 223, 247);
+        }
+
+        a:active {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-Links {
+      display: none;
+    }
+  }
+
+  .search-Btn {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    background-color: white;
+    border: none;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    overflow: hidden;
+
+    i {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      z-index: 1;
+      height: 30px;
+    }
+
+    .text-Box {
+      position: relative;
+      border: none;
+      transition: all;
+      transition-duration: 1s;
+      width: 1px;
+    }
+
+    .text-Box:hover {
+      width: 155px;
+      padding: 0.2rem;
+    }
+  }
+
+  .search-Btn:hover {
+    cursor: pointer;
+  }
+}

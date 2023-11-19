@@ -1,15 +1,13 @@
-// getting our elements
-var textBox = document.querySelector(".text-Box");
-var searchBtn = document.querySelector(".search-Icon");
-// our global varibales
-// our functions
-var openHandler = function () {
-  console.log("hallo world");
-  if (!textBox.classList.contains("active")) {
-    textBox.classList.add("active");
-  } else if (textBox.classList.contains("active")) {
-    textBox.classList.remove("active");
-  }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// importing our css
+require("./style.css");
+// Getting our elements
+var textBox = document.getElementsByClassName("text-Box")[0];
+var searchBtn = document.getElementsByClassName("search-Icon")[0];
+// Our function
+var toggleActiveClass = function () {
+    textBox.classList.toggle("active");
 };
-// our event lisnters
-searchBtn.addEventListener("click", openHandler);
+// Our event listener
+searchBtn.addEventListener("click", toggleActiveClass);

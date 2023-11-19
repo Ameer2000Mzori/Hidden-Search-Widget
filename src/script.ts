@@ -1,17 +1,16 @@
-// getting our elements
-const textBox = document.querySelector(".text-Box") as HTMLElement;
-const searchBtn = document.querySelector(".search-Icon") as HTMLElement;
-// our global varibales
+// importing our css
+import "./style.css";
 
-// our functions
-const openHandler = (): void => {
-  console.log("hallo world");
-  if (!textBox.classList.contains("active")) {
-    textBox.classList.add("active");
-  } else if (textBox.classList.contains("active")) {
-    textBox.classList.remove("active");
-  }
+// Getting our elements
+var textBox = document.getElementsByClassName("text-Box")[0] as HTMLElement;
+var searchBtn = document.getElementsByClassName(
+  "search-Icon"
+)[0] as HTMLElement;
+
+// Our function
+var toggleActiveClass = (): void => {
+  textBox.classList.toggle("active");
 };
 
-// our event lisnters
-searchBtn.addEventListener("click", openHandler);
+// Our event listener
+searchBtn.addEventListener("click", toggleActiveClass);
